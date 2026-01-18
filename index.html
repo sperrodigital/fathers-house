@@ -96,7 +96,7 @@
 			border: 1px solid rgba(255, 255, 255, 0.2);
 			border-radius: 8px;
 			padding: 2rem;
-			max-width: 500px;
+			max-width: 600px;
 			width: 90%;
 			max-height: 90vh;
 			overflow-y: auto;
@@ -228,6 +228,23 @@
 
 		.sg-modal .actions {
 			margin-top: 1.5rem;
+		}
+
+		.form-error {
+			background: rgba(220, 53, 69, 0.15);
+			border: 1px solid rgba(220, 53, 69, 0.4);
+			border-radius: 6px;
+			padding: 0.75rem 1rem;
+			margin-bottom: 1rem;
+			color: #ff6b6b;
+			font-size: 0.9rem;
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+		}
+
+		.form-error i {
+			font-size: 1rem;
 		}
 
 		@media screen and (max-width: 736px) {
@@ -468,26 +485,113 @@
 				<h2 class="major">Our Groups</h2>				
 				
 				<div class="small-groups-grid">
-					<div class="small-group-card" data-group="bevzenko" data-name="Bevzenko" data-leaders="The Bevzenko Family" data-time="Tuesdays at 7:00 PM" data-location="Greer, SC">
-						<div class="leader-image-container">
-							<img src="/images/smallgroups/Bevzenko.webp" alt="The Bevzenko Family" class="leader-image">
+					<div class="small-group-card" data-group="grek-zakharchuk" data-name="Grek/Zakharchuk (English)" data-leaders="The Greks" data-leaders2="The Zakharchuks" data-time="Jan 31st at 6:00 PM" data-location="Spartanburg, SC">
+						<div class="leader-image-wrapper leader-left">
+							<div class="leader-image-container">
+								<img src="/images/smallgroups/Grek.jpeg" alt="The Greks" class="leader-image">
+							</div>
+							<p class="leader-name-mobile">The Greks</p>
 						</div>
 						<div class="group-info">
-							<p class="leader-names">The Bevzenko Family</p>
-							<p class="group-details"><i class="fas fa-calendar-alt"></i> Tuesdays at 7:00 PM</p>
-							<p class="group-details"><i class="fas fa-map-marker-alt"></i> Greer, SC</p>
+							<p class="group-language">English</p>
+							<div class="group-details-row">
+								<p class="group-details"><i class="fas fa-calendar-alt"></i> Jan 31st</p>
+								<p class="group-details"><i class="fas fa-clock"></i> 6:00 PM</p>
+								<p class="group-details"><i class="fas fa-map-marker-alt"></i> Spartanburg, SC</p>
+							</div>
+							<button class="button register-btn">Register</button>
+						</div>
+						<div class="leader-image-wrapper leader-right">
+							<div class="leader-image-container">
+								<img src="/images/smallgroups/Zakharchuk.JPG" alt="The Zakharchuks" class="leader-image">
+							</div>
+							<p class="leader-name-mobile">The Zakharchuks</p>
+						</div>
+					</div>
+					
+					<div class="small-group-card" data-group="bevzenko-yakunin" data-name="Bevzenko/Yakunin (Ukrainian)" data-leaders="The Yakunins" data-leaders2="The Bevzenkos" data-time="Jan 31st at 6:00 PM" data-location="Wellford, SC">
+						<div class="leader-image-wrapper leader-left">
+							<div class="leader-image-container">
+								<img src="/images/smallgroups/Yakunin.jpeg" alt="The Yakunins" class="leader-image">
+							</div>
+							<p class="leader-name-mobile">The Yakunins</p>
+						</div>
+						<div class="group-info">
+							<p class="group-language">Ukrainian</p>
+							<div class="group-details-row">
+								<p class="group-details"><i class="fas fa-calendar-alt"></i> Jan 31st</p>
+								<p class="group-details"><i class="fas fa-clock"></i> 6:00 PM</p>
+								<p class="group-details"><i class="fas fa-map-marker-alt"></i> Wellford, SC</p>
+							</div>
+							<button class="button register-btn">Register</button>
+						</div>
+						<div class="leader-image-wrapper leader-right">
+							<div class="leader-image-container">
+								<img src="/images/smallgroups/Bevzenko.webp" alt="The Bevzenkos" class="leader-image">
+							</div>
+							<p class="leader-name-mobile">The Bevzenkos</p>
+						</div>
+					</div>
+					
+					<div class="small-group-card single-leader" data-group="polishchuk" data-name="Polishchuk (Ukrainian)" data-leaders="The Polishchuks" data-leaders2="" data-time="Jan 31st at 6:00 PM" data-location="Greenville, SC">
+						<div class="leader-image-wrapper leader-single">
+							<div class="leader-image-container">
+								<img src="/images/smallgroups/Polishchuk.JPG" alt="The Polishchuks" class="leader-image">
+							</div>
+							<p class="leader-name-mobile">The Polishchuks</p>
+						</div>
+						<div class="group-info">
+							<p class="group-language">Ukrainian</p>
+							<div class="group-details-row">
+								<p class="group-details"><i class="fas fa-calendar-alt"></i> Jan 31st</p>
+								<p class="group-details"><i class="fas fa-clock"></i> 6:00 PM</p>
+								<p class="group-details"><i class="fas fa-map-marker-alt"></i> Greenville, SC</p>
+							</div>
 							<button class="button register-btn">Register</button>
 						</div>
 					</div>
 					
-					<div class="small-group-card" data-group="balchos" data-name="Balchos" data-leaders="The Balchos Family" data-time="Wednesdays at 6:30 PM" data-location="Inman, SC">
-						<div class="leader-image-container">
-							<img src="/images/smallgroups/Balchos.webp" alt="The Balchos Family" class="leader-image">
+					<div class="small-group-card" data-group="balchos-likhach" data-name="Balchos/Likhach (Ukrainian)" data-leaders="The Balchos" data-leaders2="The Likhachs" data-time="Jan 31st at 6:00 PM" data-location="Inman, SC">
+						<div class="leader-image-wrapper leader-left">
+							<div class="leader-image-container">
+								<img src="/images/smallgroups/Balchos.webp" alt="The Balchos" class="leader-image">
+							</div>
+							<p class="leader-name-mobile">The Balchos</p>
 						</div>
 						<div class="group-info">
-							<p class="leader-names">The Balchos Family</p>
-							<p class="group-details"><i class="fas fa-calendar-alt"></i> Wednesdays at 6:30 PM</p>
-							<p class="group-details"><i class="fas fa-map-marker-alt"></i> Inman, SC</p>
+							<p class="group-language">Ukrainian</p>
+							<div class="group-details-row">
+								<p class="group-details"><i class="fas fa-calendar-alt"></i> Jan 31st</p>
+								<p class="group-details"><i class="fas fa-clock"></i> 6:00 PM</p>
+								<p class="group-details"><i class="fas fa-map-marker-alt"></i> Inman, SC</p>
+							</div>
+							<button class="button register-btn">Register</button>
+						</div>
+						<div class="leader-image-wrapper leader-right">
+							<div class="leader-image-container">
+								<img src="/images/smallgroups/Likhach.JPG" alt="The Likhachs" class="leader-image">
+							</div>
+							<p class="leader-name-mobile">The Likhachs</p>
+						</div>
+					</div>
+					
+					<div class="small-group-card single-leader" data-group="zakharchuk-55" data-name="Zakharchuk (55+)" data-leaders="The Zakharchuks" data-leaders2="" data-time="Jan 31st at 6:00 PM" data-location="Spartanburg, SC">
+						<div class="leader-image-wrapper leader-single">
+							<div class="leader-image-container">
+								<img src="/images/smallgroups/Zakharchuk_1.JPG" alt="The Zakharchuks" class="leader-image">
+							</div>
+							<p class="leader-name-mobile">The Zakharchuks</p>
+						</div>
+						<div class="group-info">
+							<div class="group-language-row">
+								<p class="group-language">55+</p>
+								<p class="group-language">Ukrainian</p>
+							</div>
+							<div class="group-details-row">
+								<p class="group-details"><i class="fas fa-calendar-alt"></i> Jan 31st</p>
+								<p class="group-details"><i class="fas fa-clock"></i> 6:00 PM</p>
+								<p class="group-details"><i class="fas fa-map-marker-alt"></i> Spartanburg, SC</p>
+							</div>
 							<button class="button register-btn">Register</button>
 						</div>
 					</div>
@@ -516,20 +620,103 @@
 						box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 					}
 
-					.leader-image-container {
-						width: 50%;
-						min-width: 50%;
-						height: 260px;
-						overflow: hidden;
+					.leader-image-wrapper {
+						width: 32%;
+						min-width: 32%;
 						flex-shrink: 0;
 					}
 
-					.leader-image {
+					.leader-image-container {
+						width: 100%;
+						min-height: 280px;
+						overflow: hidden;
+						position: relative;
+					}
+
+					.leader-image-container .leader-image {
+						position: absolute;
+						top: 0;
+						left: 0;
 						width: 100%;
 						height: 100%;
 						object-fit: cover;
-						object-position: top;
+						object-position: center top;
 						background: rgba(255, 255, 255, 0.1);
+					}
+
+					/* Diagonal slash effect */
+					.leader-image-wrapper.leader-left .leader-image-container {
+						clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+					}
+
+					.leader-image-wrapper.leader-right .leader-image-container {
+						clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+					}
+
+					/* Family names under images */
+					.leader-name-mobile {
+						display: block;
+						color: #4a9eff;
+						font-size: 0.9rem;
+						font-weight: 600;
+						padding: 0.5rem 0.5rem;
+						margin: 0;
+						background: transparent;
+					}
+
+					.leader-image-wrapper.leader-left .leader-name-mobile {
+						text-align: left;
+					}
+
+					.leader-image-wrapper.leader-right .leader-name-mobile {
+						text-align: right;
+					}
+
+					/* Hide combined names since individual names show under images */
+					.group-info .leader-names {
+						display: none;
+					}
+
+					/* Group language/type badge */
+					.group-language-row {
+						display: flex;
+						flex-direction: row;
+						justify-content: center;
+						gap: 0.5rem;
+						margin-bottom: 0.75rem;
+					}
+
+					.group-language {
+						display: inline-block;
+						width: fit-content;
+						align-self: center;
+						background: rgba(74, 158, 255, 0.15);
+						color: #4a9eff;
+						font-size: 0.85rem;
+						font-weight: 600;
+						padding: 0.35rem 0.85rem;
+						border-radius: 20px;
+						margin: 0 0 0.75rem 0;
+						letter-spacing: 0.05em;
+						border: 1px solid rgba(74, 158, 255, 0.3);
+					}
+
+					.group-language-row .group-language {
+						margin: 0;
+					}
+
+					/* Single leader card styles */
+					.small-group-card.single-leader .leader-image-wrapper.leader-single {
+						width: 40%;
+						min-width: 40%;
+					}
+
+					.small-group-card.single-leader .leader-image-wrapper.leader-single .leader-image-container {
+						clip-path: none;
+					}
+
+					.small-group-card.single-leader .leader-image-wrapper.leader-single .leader-name-mobile {
+						text-align: center;
 					}
 
 					.group-info {
@@ -538,6 +725,32 @@
 						display: flex;
 						flex-direction: column;
 						justify-content: center;
+						text-align: center;
+					}
+
+					.group-details-row {
+						display: flex;
+						flex-direction: column;
+						gap: 0.5rem;
+						margin-bottom: 0.5rem;
+					}
+
+					.group-details {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						gap: 0.5rem;
+						color: #e0e0e0;
+						font-size: 0.95rem;
+						margin: 0;
+						padding: 0.4rem 0;
+					}
+
+					.group-details i {
+						color: #4a9eff;
+						font-size: 1rem;
+						width: 20px;
+						text-align: center;
 					}
 
 					/* Placeholder for missing images */
@@ -563,17 +776,6 @@
 						font-weight: 600;
 					}
 
-					.group-details {
-						color: #b8b8b8;
-						font-size: 0.9rem;
-						margin: 0.25rem 0;
-					}
-
-					.group-details i {
-						color: #4a9eff;
-						margin-right: 0.5rem;
-						width: 18px;
-					}
 
 					.register-btn {
 						margin-top: 2.5rem;
@@ -588,22 +790,120 @@
 
 					/* Mobile Styles for Small Groups */
 					@media screen and (max-width: 736px) {
+						.small-groups-grid {
+							gap: 1.25rem;
+							margin: 1rem 0;
+						}
+
 						.small-group-card {
+							flex-direction: row;
+							flex-wrap: wrap;
+							border-radius: 12px;
+						}
+
+						.leader-image-wrapper {
+							width: 50%;
+							min-width: unset;
+							flex: 0 0 50%;
+							display: flex;
 							flex-direction: column;
 						}
 
+						.leader-image-wrapper.leader-left {
+							order: 1;
+						}
+
+						.leader-image-wrapper.leader-right {
+							order: 2;
+						}
+
 						.leader-image-container {
-							width: 100%;
-							min-width: 100%;
-							height: 250px;
+							min-height: 180px;
+						}
+
+						.leader-image-wrapper.leader-left .leader-image-container {
+							clip-path: polygon(0 0, 100% 0, 92% 100%, 0 100%);
+						}
+
+						.leader-image-wrapper.leader-right .leader-image-container {
+							clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 100%);
+						}
+
+						/* Show individual family names on mobile */
+						.leader-name-mobile {
+							display: block;
+							color: #4a9eff;
+							font-size: 1rem;
+							font-weight: 600;
+							padding: 0.5rem 0.5rem;
+							margin: 0;
+							background: rgba(255, 255, 255, 0.03);
+						}
+
+						.leader-image-wrapper.leader-left .leader-name-mobile {
+							text-align: left;
+						}
+
+						.leader-image-wrapper.leader-right .leader-name-mobile {
+							text-align: right;
+						}
+
+						/* Hide combined names on mobile */
+						.group-info .leader-names {
+							display: none;
 						}
 
 						.group-info {
+							order: 3;
+							flex: 0 0 100%;
+							width: 100%;
 							text-align: center;
+							padding: 1rem 1.25rem 1.5rem;
+							border-top: 1px solid rgba(255, 255, 255, 0.1);
+						}
+
+						.group-info .group-details-row {
+							display: flex;
+							flex-direction: row;
+							justify-content: center;
+							gap: 1rem;
+							flex-wrap: wrap;
+						}
+
+						.group-details {
+							font-size: 0.9rem;
+							padding: 0.3rem 0;
+						}
+
+						.group-language {
+							font-size: 0.8rem;
+							padding: 0.3rem 0.7rem;
+							margin-bottom: 0.75rem;
 						}
 
 						.register-btn {
 							width: 100%;
+							margin-top: 1.25rem;
+							padding: 0.85rem 1.5rem;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							line-height: 1;
+						}
+
+						/* Single leader mobile styles */
+						.small-group-card.single-leader .leader-image-wrapper.leader-single {
+							width: 100%;
+							flex: 0 0 100%;
+						}
+
+						.small-group-card.single-leader .leader-image-wrapper.leader-single .leader-image-container {
+							clip-path: none;
+							min-height: 200px;
+						}
+
+						.small-group-card.single-leader .leader-image-wrapper.leader-single .leader-name-mobile {
+							text-align: center;
 						}
 					}
 				</style>
@@ -616,6 +916,7 @@
 						var groupId = card.getAttribute('data-group');
 						var groupName = card.getAttribute('data-name');
 						var leaders = card.getAttribute('data-leaders');
+						var leaders2 = card.getAttribute('data-leaders2') || '';
 						var time = card.getAttribute('data-time');
 						var locationText = card.getAttribute('data-location');
 
@@ -624,6 +925,7 @@
 							groupId: groupId,
 							groupName: groupName,
 							leaders: leaders,
+							leaders2: leaders2,
 							time: time,
 							location: locationText
 						};
@@ -647,7 +949,8 @@
 
 						// Populate modal with group info
 						document.getElementById('sg-group').value = pendingModalData.groupId;
-						document.getElementById('modal-leaders').textContent = pendingModalData.leaders;
+						var leadersText = pendingModalData.leaders + (pendingModalData.leaders2 ? ' & ' + pendingModalData.leaders2 : '');
+						document.getElementById('modal-leaders').textContent = leadersText;
 						document.getElementById('modal-time').textContent = pendingModalData.time;
 						document.getElementById('modal-location').textContent = pendingModalData.location;
 
@@ -666,6 +969,7 @@
 						document.querySelector('.sg-modal-group-info').style.display = '';
 						document.querySelector('.sg-modal-title').textContent = 'Register for Small Group';
 						document.getElementById('registration-confirmation').style.display = 'none';
+						document.getElementById('form-error').style.display = 'none';
 
 						if (returnToGroups) {
 							// First, trigger the article to open (modal stays fully visible)
@@ -1333,20 +1637,20 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				<div class="fields">
 					<div class="field half">
 						<label for="sg-firstname">First Name</label>
-						<input type="text" name="firstname" id="sg-firstname" placeholder="John" required />
+						<input type="text" name="firstname" id="sg-firstname" required />
 					</div>
 					<div class="field half">
 						<label for="sg-lastname">Last Name</label>
-						<input type="text" name="lastname" id="sg-lastname" placeholder="Doe" required />
+						<input type="text" name="lastname" id="sg-lastname" required />
 					</div>
-					<div class="field half">
-						<label for="sg-email">Email</label>
-						<input type="email" name="email" id="sg-email" placeholder="john@example.com" required />
-					</div>
-					<div class="field half">
+					<div class="field">
 						<label for="sg-phone">Phone</label>
-						<input type="tel" name="phone" id="sg-phone" placeholder="(555) 123-4567" />
+						<input type="tel" name="phone" id="sg-phone" />
 					</div>
+				</div>
+				<div id="form-error" class="form-error" style="display: none;">
+					<i class="fas fa-exclamation-circle"></i>
+					<span id="form-error-message">There was an error submitting your registration. Please try again.</span>
 				</div>
 				<ul class="actions">
 					<li><input type="submit" value="Submit Registration" class="primary" /></li>
@@ -1404,12 +1708,14 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			var submitBtn = form.querySelector('input[type="submit"]');
 			var originalBtnText = submitBtn.value;
 			
+			// Hide any previous error
+			document.getElementById('form-error').style.display = 'none';
+			
 			// Build the payload
 			var payload = {
 				group: document.getElementById('sg-group').value,
 				firstname: document.getElementById('sg-firstname').value,
 				lastname: document.getElementById('sg-lastname').value,
-				email: document.getElementById('sg-email').value,
 				phone: document.getElementById('sg-phone').value
 			};
 			
@@ -1447,10 +1753,13 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				form.reset();
 			})
 			.catch(function(error) {
-				// Error - show message and re-enable form
+				// Error - show inline error message and re-enable form
 				console.error('Full error:', error);
 				console.error('Error message:', error.message);
-				alert('There was an error submitting your registration. Please try again.\n\nError: ' + error.message);
+				var errorEl = document.getElementById('form-error');
+				var errorMsg = document.getElementById('form-error-message');
+				errorMsg.textContent = 'There was an error submitting your registration. Please try again.';
+				errorEl.style.display = 'flex';
 				submitBtn.value = originalBtnText;
 				submitBtn.disabled = false;
 			});
