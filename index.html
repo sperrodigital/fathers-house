@@ -1766,6 +1766,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				document.getElementById('confirm-group-name').textContent = currentGroupName;
 				document.getElementById('registration-confirmation').style.display = 'block';
 				form.reset();
+				// Reset button state
+				submitBtn.value = originalBtnText;
+				submitBtn.disabled = false;
 			})
 			.catch(function(error) {
 				// Error - show inline error message and re-enable form
